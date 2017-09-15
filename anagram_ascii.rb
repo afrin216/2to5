@@ -22,10 +22,16 @@ end
 unless ARGV && ARGV.length == 1
   puts "Incorrect number of args (expected 1)"
   puts "usage: ruby anagram_ascii.rb <random_group_of_letters>"
+  puts "eg: ruby anagram_ascii.rb abcd"
   exit 1  
 end
 
 jumble = ARGV[0]
+if jumble.length > 10 then
+  puts "Unfortunately the API doesn't support more than 10 letters"
+  exit 1  
+end
+  
 #get best anagram word for the jumble
 anagram = JSON.parse(get_response("http://www.anagramica.com/best/#{jumble}"))['best'][0]
 fonts = "standard starwars".split(" ")
