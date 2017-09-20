@@ -1,1 +1,1 @@
-Prints today's open, close, high, low, volume of cerner stock
+Prints today's (or last trading day's) open, close, high, low, volume of cerner stock
