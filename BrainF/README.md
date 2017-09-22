@@ -1,3 +1,4 @@
+```
 Prints 
 
 First Hand
@@ -40,3 +41,4 @@ cell2=35   cell3=70   cell4=105(up)   cell5=105(down)   pointer=cell0
 >>--------. dec cell5 by 8. print cell5=97 
 <------.	dec cell4 by 6. print cell4=110 
 >+++.       inc cell5 by 3. print cell5=100
+```
