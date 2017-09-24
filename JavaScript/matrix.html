@@ -1,0 +1,32 @@
+<canvas id="canvas"></canvas>
+
+<script>
+//cerner_2^5_2017
+//make canvas as big as possible
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+canvas.width  = window.innerWidth;
+canvas.height = window.innerHeight;
+ctx.font = "15px Arial";
+ctx.fillStyle = "green";
+
+var cerner = "cerner".split("");
+var width = canvas.width;
+var widthDiv = Math.floor(width/15);
+var height = canvas.height;
+var placeholder = new Array();
+for(var i=0;i<width;i++){
+	placeholder.push(15);
+}
+(function rotate (i) {          
+   setTimeout(function () {   
+      	    width2 = Math.floor(Math.random()*widthDiv)*15;
+		height2 = placeholder[width2];
+		placeholder[width2]=placeholder[width2]+15;
+		character = cerner[Math.floor(Math.random()*cerner.length)];
+		ctx.fillText(character,width2,height2);
+      if (--i) rotate(i);     
+   }, 0.01)
+})(10000);   
+</script>
+
