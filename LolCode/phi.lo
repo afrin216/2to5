@@ -1,0 +1,32 @@
+HAI 1.2
+    OBTW 
+        cerner_2^5_2017
+    TLDR
+    HOW IZ I GIMMEPHI YR STAPITTT
+        I HAS A DOuBLV ITZ BIGGR OF STAPITTT AN 10
+        BOTH SAEM DOuBLV AN STAPITTT
+        O RLY?
+           YA RLY
+                VISIBLE "Maximum limit is 10"
+                FOUND YR "NaN"
+        OIC
+        
+        I HAS A counter ITZ 0
+        I HAS A MAPHI ITZ 2
+        I HAS A dividend ITZ 1 
+        dividend IS NOW A NUMBAR
+
+        IM IN YR loop UPPIN YR counter TIL BOTH SAEM counter AN STAPITTT
+            I HAS A div 
+            div IS NOW A NUMBAR
+            div R QUOSHUNT OF dividend AN MAPHI
+        	MAPHI R SUM OF div AN 1
+        IM OUTTA YR loop
+        FOUND YR MAPHI
+    IF U SAY SO
+
+I HAS A STAPITTT ITZ 9          BTW ~~~ change this to any number below 10 ~~~
+STAPITTT IS NOW A NUMBR 
+VISIBLE I IZ GIMMEPHI YR STAPITTT MKAY
+
+KTHXBYE
