@@ -1,0 +1,32 @@
+// cerner_2^5_2017
+class JDoodle {
+  static SieveOfEratosthenes(total: int): void{
+    def startTime = System.DateTime.Now;
+    mutable numArray = array(total + 1): array[bool];
+    numArray[0] = true;
+    numArray[1] = true;
+
+    foreach (i in [2 .. total]){
+        when(!numArray[i]){
+            mutable j = i;
+            while(j <= total){
+                numArray[j] = true;
+                j = j+i;
+            }
+            numArray[i] = false;
+        }
+    }
+    def endTime = System.DateTime.Now;
+    System.Console.WriteLine ("SieveOfEratosthenes Code: {0} ", endTime-startTime);
+  }
+  
+  static Main () : void
+  {
+    mutable total=100;
+    while(total<10000001){
+        System.Console.WriteLine ("For Prime Numbers Within: {0} iterations ", total);
+        SieveOfEratosthenes(total);
+        total = total * 10;
+    }
+  }
+ }
