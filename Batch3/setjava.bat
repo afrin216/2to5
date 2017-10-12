@@ -1,5 +1,4 @@
-echo off
-echo ****************************************************************************************************
+REM cerner_2^5_2017
 if "%1"=="15" goto Java5 
 if "%1"=="5" goto Java5 
 if "%1"=="16" goto Java6 
@@ -30,13 +29,9 @@ echo Setting up the environment for JDK 8
 set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_131
 goto End
 
-
 :End
 PATH=%JAVA_HOME%\bin;%PATH%
-echo.
 echo JAVA_HOME has been set to %JAVA_HOME% and inserted into the PATH.
  
 :Exit
-echo.
 java -version
-echo ****************************************************************************************************
